@@ -1,0 +1,60 @@
+<!-- Author: Carter Fowler -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me - Carter Fowler</title>
+		<meta name="author" content="Carter Fowler">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="tables.css" />
+		<link rel="stylesheet" type="text/css" href="aboutme/aboutme.css" />
+		<link rel="stylesheet" type="text/css" href="nav.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Welcome to Carter Fowler's CSCI 445 Website</h1>
+		</header>
+
+		<nav class="topnav" id="myTopnav">
+			<a href="#" class="active">Home</a>
+			<a href="aboutme/aboutme.html">About Me</a>
+			<div class="dropdown">
+				<button class="dropbtn">Templates 
+			    	<i class="fa fa-caret-down"></i>
+			    </button>
+				<div class="dropdown-content">
+					<a href="Templates/turtlecoders.html">Turtle Coders</a>
+				  	<a href="Templates/posEx.html">Position Example</a>
+				  	<a href="Templates/clearEx.html">Float and Clear</a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
+		<main>
+			<section>
+				<h2>What is this for?</h2>
+				<p>This is for CSCI 445 Web Programming's Project 4. Carter is a little tired when writing this, so please excuse the lack of content on this page.</p>
+			</section>
+		</main>
+
+		<footer>
+			<p>Carter's last website was for his app <a href="https://carterjfowler.wixsite.com/gmsguide" target="_blank">GM's Guide</a>&copy;, and if you have any more questions you can <a href="mailto:carterjfowler@mymail.mines.edu">email him</a></p>
+		</footer>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+/* Requirements
+1. A background color (#f4ffe4) for the entire page
+2. A complementary color for the text (#333333)
+3. A reasonable sans-serif font for the text.  Be sure to include a generic family
+4. Headers should use a reasonable serif font and generic family
+5. The company name should always be bold
+6. The introduction paragraph should be indented.  Other paragraphs should not.
+7. The list of services should have a line spacing of 1.5
+8. Styling the header:
+	A background color (#d5edb3)
+	The company name is centered
+	The company name has a shadow below and to the right.
+	A rounded border (I used a color of #333333 and rounded 15px)
+	Turtle logo is displayed on the right side
+9. Styling the nav menu:
+	A background color (#98bf21)
+	Matching text and border (#333333)
+	Border is 1px
+	Links do not have underlines
+	Menu options are displayed in bold
+	The entire menu is indented to be visually appealing (~20px)
+	There is some white space between the menu items
+10. Styling the company motto:
+	is italicized and centered
+	a ridge border with an extra thick left border and color (#99aa33)
+11. Styling the wrapper and content:
+	The wrapper is centered and takes 80% of the space
+	The wrapper background color is white
+	The wrapper should not be visible above the corners of header (hint: try rounding)
+	There is some space between the the content area text and the wrapper border
+	Set a minimum height (550 px) and width (600 px) so that scroll bars appear if the window size is too small.
+*/
+
+/* Addresses Requirements: 1, 2, 3*/
+body {
+	background-color: #f4ffe4;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Addresses Requirements: 4*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Addresses Requirements: 5*/
+.company_name {
+	font-weight: bold;
+}
+
+/* Addresses Requirements: 6*/
+#intro {
+	text-indent: 20px;
+}
+
+/* Addresses Requirements: 7*/
+#services {
+	line-height: 1.5;
+}
+
+/* Addresses Requirements: 8*/
+header {
+	background-color: #d5edb3;
+	text-align: center;
+	text-shadow: 2px 2px 3px;
+	border: 2px solid #333333;
+	border-radius: 15px;
+	/*logo stuff*/
+	background-image: url("turtle2.gif");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+/* Addresses Requirements: 9 - indentation*/
+nav {
+	text-indent: 20px;
+}
+
+/* Addresses Requirements: 9 - the rest of it*/
+nav a {
+	background-color: #98bf21;
+	border: 1px solid #333333;
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+/* Addresses Requirements: 10*/
+.motto {
+	text-align: center;
+	font-style: italic;
+	border-width: 5px 5px 5px 20px;
+	border-style: ridge;
+	border-color: #99aa33;
+}
+
+/* Addresses Requirements: 11*/
+#wrapper {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	border-radius: 15px;
+	min-height: 550px;
+	min-width: 600px;
+}
+
+#content {
+	margin: 10px;
+}

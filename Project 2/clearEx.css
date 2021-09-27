@@ -1,0 +1,24 @@
+#turtle_left {
+	border: inset blue;
+	float: left;
+	margin: 5px;
+}
+
+#cat_right {
+	border: solid;
+	float: right;
+	margin: 5px;
+}
+
+.div3 {
+	background-color: #FFFF99;
+}
+
+.div4 {
+	background-color: #FFB6C1;
+}
+
+/*This makes the div4 backgroundcolor also contain the cat image*/
+.clear-it {
+	clear: both;
+}

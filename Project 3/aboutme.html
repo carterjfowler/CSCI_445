@@ -1,0 +1,178 @@
+<!-- Author: Carter Fowler -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me - Carter Fowler</title>
+		<meta name="author" content="Carter Fowler">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="tables.css" />
+		<link rel="stylesheet" type="text/css" href="aboutme.css" />
+	</head>
+
+<!-- 
+Correct HTML structure and doctype
+A title for your document (About Me - Carter Fowler)
+At least two levels of headers (A Brief Description of Carter Fowler, Simple Hello World Code, Movies)
+At least one paragraph (probably more)
+At least one list (Courses, Movies)
+At least one code snippet (Simple Hello World Code)
+At least one hyperlink to an external site (GM's Guide)
+At least one html link to an anchor within the same document (jump to movies)
+At least one mailto (email him)
+At least one line break (code snippet)
+At least one horizontal rule (before and after movies)
+At least one text format other than bold or italics	(emphasized The Secret Life of Walter Mitty and marked the author)
+At least one HTML comment (this)
+At least two meta tags (charset, author, viewport)
+At least one quotation (The Secret Life of Walted Mitty)
+At least one HTML entity (&lt;, &gt;, &amp;)
+At least one HTML symbol (copyright)
+At least one image (place all images inside a folder named images)
+-->
+
+	<body>
+		<h1>A Brief Description of Carter Fowler</h1>
+		<p>Carter is a senior in Computer Science this year, and is applying for the combined program here at Mines in order to get his Master's in CS Education. This semester he is taking:</p>
+		<ul>
+			<li>CSCI 441 - Computer Graphics</li>
+			<li>CSCI 442 - Operating Systems</li>
+			<li>CSCI 445 - Web Programming</li>
+			<li>HASS 498B - Acting, Locution, &amp; Public Performance</li>
+			<li>EDNS 157 - Solidworks (for certification)</li>
+		</ul>
+		<img src="images/headshot.png" alt="Headshot">
+		<p>If you want to read his favorite movies, you can jump to <a href="#movies">Movies</a>.</p>
+
+		<h2>Simple Hello World Code</h2>
+		<div id="html_code">
+			<code>
+				&lt;!DOCTYPE html&gt;<br>
+				&lt;html lang="en-US"&gt;<br>
+					&lt;head&gt;<br>
+						&lt;title&gt;Test&lt;/title&gt;<br>
+						&lt;meta charset="UTF-8"&gt;<br>
+					&lt;/head&gt;<br>
+					<br>
+					&lt;body&gt;<br>
+						&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+					&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</code>
+		</div>
+
+		<hr>
+
+		<h2 id="movies">Movies</h2>
+		<p>Carter's top 5 favorite movies are as follows:</p>
+		<ol>
+			<li>The Secret Life of Walter Mitty</li>
+			<li>The Lord of the Rings Trilogy</li>
+			<li>Midsommar</li>
+			<li>Definitely, Maybe</li>
+			<li>Star Wars: The Empire Strikes Back</li>
+		</ol>
+		<p>His favorite quote from his number one movie, <em>The Secret Life of Walter Mitty</em> written by <mark>James Thurber</mark>, is <q>Beautiful things don't ask for attention.</q></p>
+
+		<hr>
+
+		<p>Carter's last website was for his app <a href="https://carterjfowler.wixsite.com/gmsguide" target="_blank">GM's Guide</a>&copy;, and if you have any more questions you can <a href="mailto:carterjfowler@mymail.mines.edu">email him</a></p>
+
+		<h2 class="tables">Tables</h2>
+		<table id="internships">
+			<caption>Carter's Internships</caption>
+			<thead>
+				<tr>
+					<th>Company</th>
+					<th>Job Title</th>
+					<th colspan="2">Duration</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Mission Support and Test Services</td>
+					<td>Associate in I.T.</td>
+					<td>June, 2018</td>
+					<td>August, 2018</td>
+				</tr>
+				<tr>
+					<td>HomeAdvisor</td>
+					<td>Software Development Intern</td>
+					<td>June, 2019</td>
+					<td>August, 2019</td>
+				</tr>
+				<tr>
+					<td>Tyler Technologies</td>
+					<td>Software Development Intern</td>
+					<td>May, 2020</td>
+					<td>August, 2020</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table id="BSO">
+			<caption>BSO Tier Representatives</caption>
+			<tr class="BSO-dashed_bottom">
+				<th rowspan="2">Who</th>
+				<td>Carter Fowler</td>
+				<td>Allyson Cameron</td>
+				<td>Caleb Workman</td>
+				<td>Kelsey Ferro</td>
+				<td>Emma DeAngeles</td>
+				<td>Nicole Masters</td>
+			</tr>
+			<tr>
+				<td><a href="mailto:carterjfowler@mymail.mines.edu">carterjfowler@mymail.mines.edu</a></td>
+				<td><a href="mailto:allysoncameron@mymail.mines.edu">allysoncameron@mymail.mines.edu</a></td>
+				<td><a href="mailto:calebfworkman@mines.edu">calebfworkman@mines.edu</a></td>
+				<td><a href="mailto:krferro@mymail.mines.edu">krferro@mymail.mines.edu</a></td>
+				<td><a href="mailto:edeangeles@mymail.mines.edu">edeangeles@mymail.mines.edu</a></td>
+				<td><a href="mailto:nmasters@mines.edu">nmasters@mines.edu</a></td>
+			</tr>
+			<tr>
+				<th>Tier</th>
+				<td>1</td>
+				<td>2</td>
+				<td>4</td>
+				<td>1, 2</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+
+		<table id="club_count">
+			<caption>BSO's Club Count</caption>
+			<thead>
+				<tr>
+					<th>Tier #</th>
+					<th>Number of Clubs</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Tier 1</td>
+					<td>33</td>
+				</tr>
+				<tr>
+					<td>Tier 2</td>
+					<td>43</td>
+				</tr>
+				<tr>
+					<td>Tier 3</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>Tier 4</td>
+					<td>25</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total:</td>
+					<td>121</td>
+				</tr>
+			</tfoot>
+			
+		</table>
+	</body>
+</html>

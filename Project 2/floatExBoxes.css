@@ -1,0 +1,41 @@
+.big-letter {
+	font-size: 30px;
+	color: blue;
+	text-shadow: 2px 2px black;
+	position: relative;
+	float: left;
+	top: 0;
+}
+
+
+.inner1, .inner2, .inner3 {
+	background-color: white;
+	border: dashed 3px;
+	width: 100px;
+	height: 100px;
+}
+
+.inner1 {
+	margin: 10px;
+	padding: 20px;
+	float: right;
+}
+
+.inner2 {
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
+
+.inner3 {
+	margin-top: 40px;
+	margin-right: 0px;
+	float: right;
+}
+
+.outer {
+	background-color: #add8e6;
+	width: 200px;
+	height: 200px;
+	border: dashed 3px;
+}

@@ -1,0 +1,72 @@
+/*Author: Carter Fowler*/
+
+body {
+	background-color: #81e1e3;
+}
+
+footer {
+	background-color: gray;
+	border: 2px solid black;
+	text-align: center;
+	margin: 10px;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	border: 2px outset black;
+	margin: 10px;
+	background-color: white;
+}
+
+:root {
+	--nav-text-color: #f2f2f2;
+	--nav-background-color: #333;
+	--nav-hover-color: #ddd;
+	--nav-hover-text-color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--nav-background-color);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--nav-hover-color);
+  color: var(--nav-hover-text-color);
+}
+
+/* When the screen is less than 600 pixels wide, style all the links like buttons, each on their own line*/
+@media screen and (max-width: 600px) {
+	.topnav {
+		background-color: #81e1e3;
+	}
+	.topnav a {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		width: 50%;
+		display: block;
+		text-align: center;
+		background-color: #a8a8a8;
+		color: #81e1e3;
+		border: 2px solid black;
+		border-radius: 15px;
+	}
+}

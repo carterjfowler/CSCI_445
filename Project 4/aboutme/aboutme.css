@@ -1,0 +1,71 @@
+/*Author: Carter Fowler*/
+
+/*1. At least two elements with specified fonts*/
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3 {
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+/*2. A background image (may be repeated, doesn't have to be for the entire page)*/
+header {
+	background-image: url("../images/background.jpeg");
+	color: white;
+	text-align: center;
+}
+
+footer {
+	background-color: gray;
+	color: white;
+}
+
+/*3. Style the HTML code (put it in a div, if not already done)*/
+#html_code {
+	border: 3px outset grey;
+	background-color: #6bc404;
+}
+
+/*4. Style one or more aspects of an element with a class selector*/
+.tables {
+	background-color: #00767a;
+	color: #cccccc;
+}
+
+/*5. Style one or more aspects of an element with an id selector*/
+#movies {
+	background-color: #7a0000;
+	color: white;
+}
+
+/*6. Style the image(s) as you see fit*/
+img {
+	margin-left: 20%;
+	border-radius: 15px;
+}
+
+/*7. Style each of the following pseudo-classes differently
+	link
+	visited
+	hover
+	active*/
+a:link {
+	color: #5b2e75;
+}
+
+a:visited {
+	color: #51b04c;
+}
+
+a:hover {
+	background-color: blue;
+	display: inline-block;
+	color: white;
+}
+
+a:active {
+	background-color: powderblue;
+	display: inline-block;
+	color: blue;
+}

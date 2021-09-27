@@ -1,0 +1,76 @@
+/*Author: Carter Fowler*/
+
+/*1. Solid border around the table and between cells*/
+#internships table, #internships th, #internships td {
+	border: 3px solid black;
+	padding: 3px;
+}
+
+/*2. Background color for the header with a complementary font color*/
+#internships thead {
+	background-color: #01086b;
+	color: #d9d9d9;
+}
+
+/*7. Tables should be centered, with a top margin to provide space between tables.*/
+table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 40px;
+}
+
+/*4. Dashed bottom border for some td element (do not overlap other borders)*/
+
+tr.BSO-dashed_bottom {
+	border-bottom: 1px dashed #a1a1a1;
+	border-collapse: collapse;
+}
+
+#BSO table, #BSO th {
+	border: 1px solid #a1a1a1;
+	padding: 3px;
+}
+
+#BSO td {
+	border-left: 1px solid #a1a1a1;
+	border-right: 1px solid #a1a1a1;
+}
+
+/*5. Special styling for either first or last element  (hint: use last-of-type or first-of-type pseudo-class).*/
+/*Used to achieve both 4 and 5*/
+#BSO tr:first-of-type {
+	border-top: 1px solid #a1a1a1;
+}
+
+#BSO tr:last-of-type {
+	border-top: 1px solid #a1a1a1;
+	border-bottom: 1px solid #a1a1a1;
+}
+
+/*6. Background color for alternating rows (hint: nth-of-type pseudo-class)*/
+#club_count tr:nth-of-type(even) {
+	background-color: #ababab;
+}
+
+/*3. Header and footer of a single table are different colors (background & text)*/
+#club_count thead {
+	background-color: #80b9ff;
+	color: #404040;
+}
+
+#club_count tfoot {
+	background-color: #5b2e75;
+	color: #d6d6d6;
+}
+
+#club_count table, #club_count th, #club_count td {
+	border: 3px dashed black;
+	padding: 3px;
+}
+
+
+
+/*8. Use reasonable formatting for the captions.  They should stand out from the rest of the headers and tables on the page.*/
+caption {
+	font-weight: bold;
+}

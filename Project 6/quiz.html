@@ -1,0 +1,57 @@
+<!-- Author: Carter Fowler -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me - Carter Fowler</title>
+		<meta name="author" content="Carter Fowler">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="quiz.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<header class="grid-item">
+				<h1>Test your knowledge of Star Wars</h1>
+			</header>
+
+			<main class="grid-item">
+				<section>
+					<h3>Question (select a category below)</h3>
+					<div id="question-box">
+						<p id="question_text"></p>
+					</div>
+					<h3>Answer:</h3>
+					<div id="answer-box">
+						<input type="radio" id="true" name="answer" value="true">
+						<label for="true">True</label>
+						<br>
+						<input type="radio" id="false" name="answer" value="false">
+						<label for="false">False</label>
+						<br>
+						<button id="check_answer">Check Answer</button>
+					</div>
+					<div id="question_list">
+						<button id="kessel">Kessel Run</button>
+						<button id="luke">Luke</button>
+						<button id="anakin">Anakin</button>
+						<button id="mandalorian">Mandalorian</button>
+					</div>
+				</section>
+			</main>
+
+			<aside class="grid-item">
+			    <h2>Questions Attempted</h2>
+			    <ul id="questions"></ul>
+			</aside>
+
+			<footer class="grid-item">
+				<p>Created by Carter Fowler, for class, and a little fun!</p>
+			</footer>
+
+			<script src="quiz.js"></script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+/*
+1. The sidebar should have a fixed position (i.e. when you scroll the browser it should stay in place)
+2. The header should be placed relative to the sidebar so it is not obscured.
+3. The "shy" text should be hidden behind the sidebar.
+4. The "important" text should have an absolute position so that it appears toward the top right of the screen. It should have a scrollbar.
+5. The "not-important" text should not display the overflow.
+6. The "more-important" text should display the overflow. BUT, it should set z-index so that it appears behind the "not-important" text.
+Use relative position so that the "more-important" and "not-important" divs overlap somewhat.
+7. Use different colors for the four divs and another color for the text color in the sidebar div.
+*/
+
+/* Addresses Requirements: 1 and 3 (with width and z-index)*/
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	background-color: red;
+	z-index: 10;
+}
+
+/* Addresses Requirements: 2*/
+h1 {
+	position: relative;
+	left: 60px;
+	margin-top: 0px;
+	top: 0;
+}
+
+/* Addresses Requirements: 4*/
+.important {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	background-color: powderblue;
+}
+
+/* Addresses Requirements: 5*/
+.not-important {
+	position: relative;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	z-index: 5;
+}
+
+/* Addresses Requirements: 6*/
+.more-important {
+	position: relative;
+	overflow: visible;
+	background-color: #b19cd9;
+	width: 150px;
+	height: 100px;
+	left: 50px;
+	top: -50px;
+	z-index: 1;
+}
